@@ -2,8 +2,11 @@
 
 import math
 def is_prime(num):
-    if num <=is_prime.largest  and num in is_prime.prime_number:
-        return True
+    if num <=is_prime.largest:
+        if num in is_prime.prime_number:
+            return True
+        else:
+            return False
     sqrt_num = int(math.floor(math.sqrt(num)))
     #checking prime
     for n in is_prime.prime_number:
