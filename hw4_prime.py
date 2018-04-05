@@ -21,10 +21,11 @@ def is_prime(num):
             if n % p == 0:
                 check_n = False
                 break
+        is_prime.largest += 1
         if check_n:
             is_prime.prime_number.append(n)
-        is_prime.largest += 1
-
+        else:
+            continue
         if num%n == 0:
             return False
     return True
