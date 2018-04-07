@@ -32,8 +32,8 @@ def test_prime(prime):
     return score
 
 def test_GCD(gcd):
-    test_data = [(0,3),(3,0),(48,49),(383,541),(1001,133)]
-    answer = [3,3,1,1,7]
+    test_data = [(4101,8898),(5599,6336),(3015,9551),(8049,203),(7637,3731)]
+    answer = [3,11,1,1,7]
     
     try:
         for (a,b),s  in zip(test_data,answer):
