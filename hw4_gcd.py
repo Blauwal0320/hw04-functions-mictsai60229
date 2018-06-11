@@ -2,11 +2,10 @@
 
 
 def compute_gcd(a,b):
-
-    while b!=0:
-        a,b = b,a%b
-    return a 
-
+    gcd = 1
+    for i in range( gcd+1, min(num_a, num_b)+1 ):
+        if num_a % i == 0 and num_b % i == 0:
+            gcd = i
 
 a = int(input("輸入第一個數字: "))
 b = int(input("輸入第二個數字: "))
